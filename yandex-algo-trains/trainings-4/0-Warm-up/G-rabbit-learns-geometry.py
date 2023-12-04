@@ -54,8 +54,9 @@
 0
 '''
 
+from typing import List
 
-def max_square_size(N, M, carrot):
+def max_square_size(N: int, M: int, carrot: List[List[int]]) -> int:
     dp = [[0] * M for _ in range(N)]
 
     max_side = 0

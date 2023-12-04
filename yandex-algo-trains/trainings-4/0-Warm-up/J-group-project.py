@@ -26,7 +26,7 @@ YES
 YES
 '''
 
-def can_form_group(n, a, b):
+def can_form_group(n: int, a: int, b: int) -> bool:
     min_groups = (n + b - 1) // b
     max_groups = n // a
     if min_groups <= max_groups:

@@ -29,7 +29,9 @@ i-го студента старостой.
 28 16 15 17 32 
 '''
 
-def average_level(n, ratings):
+from typing import List
+
+def average_level(n: int, ratings: List[int]) -> List[int]:
     level = [0] * n
     total_dissatisfaction = 0
 

@@ -36,7 +36,7 @@ No
 No
 '''
 
-def compare_groups(a, b, n):
+def compare_groups(a: int, b: int, n: int) -> str:
     if b % n == 0:
         return "Yes" if a > b // n else "No"
     return "Yes" if a > b // n + 1 else "No"

@@ -38,7 +38,9 @@ NOT FOUND
 2
 '''
 
-def find_element(arr, L, R):
+from typing import List
+
+def find_element(arr: List[int], L: int, R: int) -> int:
     min_val = min(arr[L:R+1])
     for i in range(L, R+1):
         if arr[i] != min_val:

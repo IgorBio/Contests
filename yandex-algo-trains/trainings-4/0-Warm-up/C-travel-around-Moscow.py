@@ -35,7 +35,7 @@
 
 import math
 
-def distance(xA, yA, xB, yB):
+def distance(xA: int, yA: int, xB: int, yB: int) -> float:
     start_radius = math.sqrt(xA**2 + yA**2)
     end_radius = math.sqrt(xB**2 + yB**2)
 

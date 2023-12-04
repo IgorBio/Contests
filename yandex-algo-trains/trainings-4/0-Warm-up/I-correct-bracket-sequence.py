@@ -29,7 +29,7 @@ no
 no
 '''
 
-def correct_bracket_sequence(sequence):
+def correct_bracket_sequence(sequence: str) -> bool:
     if not sequence:
         return True
     

@@ -24,7 +24,7 @@ bat
 NO
 '''
 
-def anagrams(str1, str2):
+def anagrams(str1: str, str2: str) -> bool:
     if len(str1) != len(str2):
         return False
 

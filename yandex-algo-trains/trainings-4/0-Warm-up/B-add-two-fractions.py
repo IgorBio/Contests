@@ -15,12 +15,14 @@
 1 1
 '''
 
-def gcd(a, b):
+from typing import Tuple
+
+def gcd(a: int, b: int) -> int:
     while b:
         a, b = b, a % b
     return a
 
-def add_fractions(a, b, c, d):
+def add_fractions(a: int, b: int, c: int, d: int) -> Tuple[int, int]:
     numerator = a * d + b * c
     denominator = b * d
     common_divisor = gcd(numerator, denominator)
